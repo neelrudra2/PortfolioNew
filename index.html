@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/imgs/icon_img.png" />
+
+    <!--Font Awesome--->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!--CSS--->
+    <link rel="stylesheet" href="assets/css/portnew.css" />
+
+    <title>Rudraneel's Portfolio</title>
+  </head>
+  <body>
+    <!--Style Switcher--->
+    <input type="radio" name="color" id="color-1" />
+    <input type="radio" name="color" id="color-2" />
+    <input type="radio" name="color" id="color-3" />
+    <input type="radio" name="color" id="color-4" />
+    <input type="radio" name="color" id="color-5" />
+    <input type="radio" name="color" id="color-6" />
+    <input type="radio" name="color" id="color-7" />
+    <input type="radio" name="color" id="color-8" />
+    <input type="radio" name="color" id="color-9" />
+    <input type="radio" name="color" id="color-10" />
+
+    <input type="checkbox" id="toggler" />
+    <input type="checkbox" id="day-night" />
+
+    <div class="style__switcher">
+      <label for="toggler" class="style__switcher-toggler">
+        <i class="fa-solid fa-gear fa-spin"></i>
+      </label>
+
+      <label for="day-night" class="style__switcher-theme">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+      </label>
+
+      <h3 class="style__switcher-title">Theme Colors</h3>
+
+      <div class="style__switcher-colors">
+        <label for="color-1" class="color-1 color"></label>
+        <label for="color-2" class="color-2 color"></label>
+        <label for="color-3" class="color-3 color"></label>
+        <label for="color-4" class="color-4 color"></label>
+        <label for="color-5" class="color-5 color"></label>
+        <label for="color-6" class="color-6 color"></label>
+        <label for="color-7" class="color-7 color"></label>
+        <label for="color-8" class="color-8 color"></label>
+        <label for="color-9" class="color-9 color"></label>
+        <label for="color-10" class="color-10 color"></label>
+      </div>
+    </div>
+
+    <!--Header--->
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Rudraneel</a>
+
+        <input type="checkbox" id="nav-toggler" />
+        <label for="nav-toggler" class="nav__toggle">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Home</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#qualification" class="nav__link">Experience</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Services</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Skills</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#works" class="nav__link">Portfolio</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Main--->
+    <main class="main">
+      <!--Home--->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <span class="home__small">Hello</span>
+            <h1 class="home__title">
+              <span>I am</span> Rudraneel <br />
+              <span>A budding </span> <br />
+              Software Developer
+            </h1>
+
+            <p class="home__description">
+              I'm a tech enthusiast passionate about solving real-world
+              challenges through software development, data analysis, and
+              intuitive design. Ready to turn complex problems into simple,
+              elegant solutions. Let's build something remarkable together.
+            </p>
+
+            <div class="home__btns">
+              <a href="#contact" class="btn">Hire Me</a>
+              <a href="#works" class="btn btn--transparent">Portfolio</a>
+            </div>
+          </div>
+
+          <div class="home__img-wrapper">
+            <img src="assets/imgs/self.jpeg" alt="" class="home__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--About--->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__img-wrapper">
+            <img
+              src="assets/imgs/self.jpeg"
+              alt="Profile Image"
+              class="about__img"
+            />
+          </div>
+
+          <div class="about__content">
+            <h2 class="section__title" data-title="Who am I ?">
+              Empowering ideas with code and creativity
+            </h2>
+            <p class="about__description">
+              I have hands-on experience in software and web development,
+              constantly seeking out new challenges to expand my knowledge.
+            </p>
+
+            <ul class="about__data grid">
+              <li class="data__item">
+                <h3 class="data__title">Name:</h3>
+                <span class="data__description">Rudraneel Bhattacharyya</span>
+              </li>
+
+              <li class="data__item">
+                <h3 class="data__title">Age:</h3>
+                <span class="data__description">22 Years</span>
+              </li>
+
+              <li class="data__item">
+                <h3 class="data__title">From:</h3>
+                <span class="data__description">Agartala, Tripura, India</span>
+              </li>
+
+              <li class="data__item">
+                <h3 class="data__title">Email:</h3>
+                <span class="data__description about__link"
+                  >rudraneel087@gmail.com</span
+                >
+              </li>
+            </ul>
+
+            <div class="about__bottom">
+              <a
+                href="assets/RudraneelBhattacharyya_Resume.pdf"
+                target="_blank"
+                class="btn"
+                >Download Resume</a
+              >
+
+              <div class="about__social-links">
+                <a
+                  href="https://www.linkedin.com/in/rudraneelbhattacharyya9/"
+                  target="_blank"
+                  class="about__social-link"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://github.com/neelrudra2"
+                  target="_blank"
+                  class="about__social-link"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                  href="https://x.com/?lang=en"
+                  target="_blank"
+                  class="about__social-link"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Qualification--->
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title title-center" data-title="My Journey">
+          Qualification
+        </h2>
+
+        <div class="resume__container container grid">
+          <div class="resume__group">
+            <h3 class="resume__heading">Education</h3>
+
+            <div class="resume__items">
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">Graduation</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">
+                      National Institute of Technology, Agartala
+                    </h3>
+                    <span class="resume__date">2022-2026</span>
+                  </div>
+                  <p class="resume__description">
+                    B.Tech (Electronics and Communication Engineering)
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">Senior Secondary</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">Don Bosco School, Agartala</h3>
+                    <span class="resume__date">2020-2021</span>
+                  </div>
+                  <p class="resume__description">AISSCE (Class 12th)</p>
+                </div>
+              </div>
+
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">High School</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">Don Bosco School, Agartala</h3>
+                    <span class="resume__date">2018-2019</span>
+                  </div>
+                  <p class="resume__description">AISSE (Class 10th)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume__group">
+            <h3 class="resume__heading">Experience</h3>
+
+            <div class="resume__items">
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">Chegg Inc.</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">
+                      Managed Network Expert (MNE), Freelance
+                    </h3>
+                    <span class="resume__date">2023-Present</span>
+                  </div>
+                  <p class="resume__description">Remote</p>
+                </div>
+              </div>
+
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">
+                    Indian Institute of Remote Sensing, ISRO
+                  </h3>
+                  <span class="resume__icon">+</span>
+                </div>
+
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">AI/ML Course Project</h3>
+                    <span class="resume__date">2024</span>
+                  </div>
+                  <p class="resume__description">Remote</p>
+                </div>
+              </div>
+
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">Technohacks Edutech</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">C++ Developer Intern</h3>
+                    <span class="resume__date">2023</span>
+                  </div>
+                  <p class="resume__description">Remote</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Services--->
+      <section class="services section" id="services">
+        <h2 class="section__title title-center" data-title="My Services">
+          What I can do for you
+        </h2>
+
+        <div class="services__container container grid">
+          <div class="services__item">
+            <i class="fa-solid fa-pen-to-square services__icon"></i>
+
+            <h3 class="services__title">Software Development</h3>
+            <p class="services__description">
+              Crafting efficient, robust, and tailored software solutions to
+              address specific needs, from concept to deployment, ensuring
+              seamless performance and reliability.
+            </p>
+
+            <span class="services__no">01</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-laptop services__icon"></i>
+
+            <h3 class="services__title">Web Development</h3>
+            <p class="services__description">
+              Building visually appealing, responsive websites with user-centric
+              design, optimized for both desktop and mobile, to create engaging
+              digital experiences.
+            </p>
+
+            <span class="services__no">02</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-chart-area services__icon"></i>
+
+            <h3 class="services__title">Data Analysis</h3>
+            <p class="services__description">
+              Transforming complex data into meaningful insights, using
+              statistical and analytical tools to guide strategic decisions and
+              reveal trends.
+            </p>
+
+            <span class="services__no">03</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-pen-to-square services__icon"></i>
+
+            <h3 class="services__title">Technical Content Writing</h3>
+            <p class="services__description">
+              Producing clear, concise, and engaging content on technical
+              topics, bridging the gap between complex ideas and accessible
+              information.
+            </p>
+
+            <span class="services__no">04</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-laptop services__icon"></i>
+
+            <h3 class="services__title">Web Scrapping</h3>
+            <p class="services__description">
+              Extracting valuable data from websites, adhering to best practices
+              and ethical standards, to empower data-driven projects with clean,
+              structured information.
+            </p>
+
+            <span class="services__no">05</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-chart-area services__icon"></i>
+
+            <h3 class="services__title">Data Management</h3>
+            <p class="services__description">
+              Organizing, maintaining, and optimizing data to ensure
+              accessibility, accuracy, and security, supporting data integrity
+              across various applications.
+            </p>
+
+            <span class="services__no">06</span>
+          </div>
+        </div>
+      </section>
+
+      <!--Skills--->
+      <section class="skills section" id="skills">
+        <h2 class="section__title title-center" data-title="My Skills">
+          Professional Skills
+        </h2>
+
+        <div class="skills__container container grid">
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">C++</h3>
+              <span class="skills__no">85%</span>
+            </div>
+
+            <p class="skills__description">
+              Strong in Data Structures and Algorithms, proficient in
+              high-performance coding and competitive programming.
+            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 85%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">Python</h3>
+              <span class="skills__no">60%</span>
+            </div>
+
+            <p class="skills__description">
+              Skilled in Python programming with expertise in problem-solving,
+              algorithms, and working with libraries for efficient coding
+              solutions.
+            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 60%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">Frontend Development</h3>
+              <span class="skills__no">60%</span>
+            </div>
+
+            <p class="skills__description">
+              Skilled in HTML, CSS, JavaScript, React, Tailwind CSS, and
+              TypeScript, creating responsive designs and interactive user
+              interfaces.
+            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 60%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">Backend Development</h3>
+              <span class="skills__no">40%</span>
+            </div>
+
+            <p class="skills__description">
+              Proficient in Node.js, Django, and API development, building
+              secure, scalable, and efficient backend solutions.
+            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 40%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">Java</h3>
+              <span class="skills__no">30%</span>
+            </div>
+
+            <p class="skills__description">
+              Strong understanding of OOP principles, data structures,
+              algorithms, and developing efficient and modular code.
+            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 30%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">Data Analysis</h3>
+              <span class="skills__no">30%</span>
+            </div>
+
+            <p class="skills__description">
+              Skilled in data analysis, visualization using Pandas, NumPy,
+              Matplotlib and SQL, extracting insights and presenting data-driven
+              solutions.
+            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 30%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Portfolio--->
+      <section class="works section" id="works">
+        <h2 class="section__title title-center" data-title="My Portfolio">
+          Recent Works
+        </h2>
+
+        <div class="work__container container grid">
+          <div class="work__card">
+            <img src="assets/imgs/works1.jpg" alt="" class="work__img" />
+
+            <div class="work__details">
+              <h3 class="work__title">CineFinder</h3>
+              <span class="work__description"
+                >A Python based movie searching application</span
+              >
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img src="assets/imgs/works2.jpg" alt="" class="work__img" />
+
+            <div class="work__details">
+              <h3 class="work__title">Image-to-PDF Converter</h3>
+              <span class="work__description"
+                >Convert any image file into PDF file</span
+              >
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img src="assets/imgs/works3.jpg" alt="" class="work__img" />
+
+            <div class="work__details">
+              <h3 class="work__title">My GitHub</h3>
+              <span class="work__description"
+                >Visit my GitHub account for more</span
+              >
+            </div>
+          </div>
+
+          <!-- <div class="work__card">
+            <img src="assets/imgs/Self.jpeg" alt="" class="work__img" />
+
+            <div class="work__details">
+              <h3 class="work__title">Python Dev</h3>
+              <span class="work__description"
+                >Lorem ipsum dolor sit amet consectetur.</span
+              >
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img src="assets/imgs/Self.jpeg" alt="" class="work__img" />
+
+            <div class="work__details">
+              <h3 class="work__title">GoLang</h3>
+              <span class="work__description"
+                >Lorem ipsum dolor sit amet consectetur.</span
+              >
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img src="assets/imgs/Self.jpeg" alt="" class="work__img" />
+
+            <div class="work__details">
+              <h3 class="work__title">Nothing</h3>
+              <span class="work__description"
+                >Lorem ipsum dolor sit amet consectetur.</span
+              >
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <!--Testimonials--->
+      <section class="testimonial" id="testimonial"></section>
+
+      <!--Contact--->
+      <section class="contact section" id="contact">
+        <h2 class="section__title title-center" data-title="Get In Touch">
+          Contact Me
+        </h2>
+
+        <div class="contact__container container grid">
+          <div class="contact__details">
+            <div class="contact__item">
+              <i class="fa-solid fa-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Call</h3>
+                <span class="contact__data">+91 6033061894</span>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <i class="fa-solid fa-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__data">rnby2002@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <i class="fa-solid fa-location-dot contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Address</h3>
+                <span class="contact__data">Agartala, Tripura, India</span>
+              </div>
+            </div>
+          </div>
+
+          <form
+            form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact__form"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="e39e8c49-0da6-4e2f-b4a0-6e85c5d909c8"
+            />
+            <div class="form__group">
+              <div class="form__input">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Name"
+                  class="input__control"
+                />
+              </div>
+
+              <div class="form__input">
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Email"
+                  class="input__control"
+                />
+              </div>
+            </div>
+
+            <div class="form__input">
+              <input
+                type="text"
+                name="Subject"
+                placeholder="Subject"
+                class="input__control"
+              />
+            </div>
+
+            <div class="form__input">
+              <textarea
+                name="Message"
+                placeholder="Message"
+                cols="30"
+                rows="10"
+                class="input__control textarea"
+              ></textarea>
+            </div>
+
+            <button class="btn contact__btn">Send Message</button>
+          </form>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116770.7591982156!2d91.2119461763451!3d23.85107173593986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3753f40dc94123a7%3A0xd0a1263c6c40c8c7!2sAgartala%2C%20Tripura!5e0!3m2!1sen!2sin!4v1731385835437!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <p class="footer__copyright">
+          &copy; 2024 Rudraneel. All Rights Reserved
+        </p>
+
+        <div class="footer__social-links">
+          <a
+            href="https://www.linkedin.com/in/rudraneelbhattacharyya9/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/neelrudra2"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://x.com/?lang=en"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
